@@ -34,6 +34,12 @@ body {
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 100%;
+  padding-bottom: 75px;
+}
+
+body,
+a {
+  color: #555;
 }
 
 a {
@@ -62,8 +68,9 @@ a {
   padding: 10px 5px;
 }
 
-.navbar ul a:hover {
-  color: tomato;
+.navbar ul a:hover,
+.description a {
+  color: dodgerblue;
 }
 
 .navbar ul li,
@@ -71,12 +78,6 @@ a {
 .header h1,
 .header p {
   transition: 1s;
-}
-
-.navbar p,
-.navbar a,
-.header{
-  color: #555;
 }
 
 .navbar p {
@@ -108,6 +109,7 @@ a {
   font-weight: 100;
   margin-left: -5px;
   transform: rotate(5deg);
+  font-family: sans-serif;
 }
 
 .header p {
@@ -115,8 +117,92 @@ a {
   margin: 0;
 }
 
+.description {
+  width: 80%;
+  margin: 3em auto 0 auto;
+  line-height: 1.5;
+}
+
+.description a {
+  text-decoration: underline;
+}
+
+.description h2 {
+  margin: 0 0 .5em 0;
+  text-decoration: underline;
+}
+
+.description p {
+  font-size: 1.2em;
+  margin: 0 3em 0 0;
+  padding: 0;
+}
+
+.half,
+.third {
+  display: inline-block;
+  float: right;
+}
+
+.half {
+  width: 49%;
+}
+
+.third {
+  width: 33%;
+}
+
+.inline-code {
+  font-family: monospace;
+  background: #f0f0f0;
+  color: black;
+  font-size: .9em;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0 10px 20px;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  font-size: .87em;
+  background: #fcfcfc;
+}
+
+@media screen and (max-width: 975px) {
+  .half,
+  .third {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+
+  .description p {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  footer {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   body {
     font-size: .65em;
   }
 }
+
+@media screen and (max-width: 475px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  .header {
+    display: none;
+  }
+}
+
