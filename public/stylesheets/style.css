@@ -1,3 +1,31 @@
+/* Keyframes */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes dropIn { from { margin-top:-50px; } to { margin-top:0; } }
+@-moz-keyframes dropIn { from { margin-top:-50px; } to { margin-top:0; } }
+@keyframes dripIn { from { margin-top:-50px; } to { margin-top:0; } }
+
+
+/* Animations */
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+ 
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+
+/* Styles */
 html {
   height: 100%;
 }
@@ -35,11 +63,10 @@ a {
 }
 
 .navbar ul a:hover {
-  color: #3b4af5;
+  color: tomato;
 }
 
 .navbar ul li,
-.navbar ul a,
 .navbar p,
 .header h1,
 .header p {
@@ -62,7 +89,7 @@ a {
 
 .header {
   background: #fcfcfc;
-  height: 50%;
+  height: 45%;
   min-height: 180px;
   position: relative;
   border-bottom: 1px #555 solid;
@@ -71,12 +98,16 @@ a {
 .header div {
   position: absolute;
   bottom: 5px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .header h1 {
   font-size: 5em;
   margin: 0;
   font-weight: 100;
+  margin-left: -5px;
+  transform: rotate(5deg);
 }
 
 .header p {
