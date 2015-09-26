@@ -43,8 +43,8 @@ a {
 .navbar {
   position: relative;
   width: 100%;
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #555;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   background: #fff;
   z-index: 100;
 }
@@ -92,7 +92,7 @@ a {
   height: 45%;
   min-height: 180px;
   position: relative;
-  border-bottom: 1px #555 solid;
+  border-bottom: 1px #ccc solid;
 }
 
 .header div {
