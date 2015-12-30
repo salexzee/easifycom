@@ -8,12 +8,12 @@ This is the website source code for the [EasifyJS](https://github.com/salexzee/E
  - Uses the Jade template engine for HTML
  - Will probably use MongoDB (NoSQL) once a database is needed
 
- ### Front-end JS
+### Front-end JS
 
  - Uses Angular.js (not in current build)
  - Uses jQuery (not in current build)
 
- ### Front-end CSS
+### Front-end CSS
 
  - Uses normal CSS
 
